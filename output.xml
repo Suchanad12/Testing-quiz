@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-09T16:20:57.417603" rpa="false" schemaversion="5">
+<suite id="s1" name="testRF02" source="D:\Work\y2\2\software testing\Quize\Software-Testing-_Quiz02\testRF02.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-09T16:20:57.585840" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com'.</msg>
+<arg>https://chiangmuan.igovapp.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-09T16:20:57.585650" elapsed="2.408298"/>
+</kw>
+<test id="s1-t1" name="Register" line="40">
+<kw name="Regist">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ระบบบริการประชาชน</arg>
+<arg>timeout=None</arg>
+<arg>error=None</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-09T16:20:59.994965" elapsed="0.034029"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:00.029429" level="INFO">Clicking element '//*[@id="root"]/div/nav/header/div/a[1]'.</msg>
+<arg>//*[@id="root"]/div/nav/header/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:00.029151" elapsed="1.029956"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:01.059479" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/div[2]/a/span'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/div[2]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:01.059248" elapsed="0.051066"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]/div/div[2]/span[1]</arg>
+<arg>timeout=180</arg>
+<arg>error=None</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-09T16:21:01.110454" elapsed="8.463007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:09.573849" level="INFO">Clicking element '//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]/div/div[2]/span[1]'.</msg>
+<arg>//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]/div/div[2]/span[1]</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:09.573628" elapsed="0.172649"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:20:59.994605" elapsed="9.751816"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:20:59.994128" elapsed="9.752648"/>
+</test>
+<test id="s1-t2" name="Verify id" line="42">
+<kw name="To Home">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:09.756568" level="INFO">Current page contains element '//*[@id="root"]/div/nav/header/ul/div/a/div'.</msg>
+<arg>//*[@id="root"]/div/nav/header/ul/div/a/div</arg>
+<arg>timeout=10</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-02-09T16:21:09.748075" elapsed="0.008612"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:09.757151" level="INFO">Clicking element '//*[@id="root"]/div/nav/header/ul/div/a/div'.</msg>
+<arg>//*[@id="root"]/div/nav/header/ul/div/a/div</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:09.756880" elapsed="0.090507"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>https://chiangmuan.igovapp.com/</arg>
+<arg>timeout=10</arg>
+<arg>message=None</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-02-09T16:21:09.847578" elapsed="0.009961"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:21:09.747861" elapsed="0.109826"/>
+</kw>
+<kw name="To Profile">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:09.858637" level="INFO">Clicking element '//*[@id="root"]/div/main/section[2]/div/a[3]/div'.</msg>
+<arg>//*[@id="root"]/div/main/section[2]/div/a[3]/div</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:09.858387" elapsed="0.055091"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[@id="root"]/div/main/section/div[2]/div/a</arg>
+<arg>timeout=None</arg>
+<arg>error=None</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-09T16:21:09.913698" elapsed="0.014367"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:09.928394" level="INFO">Clicking element '//*[@id="root"]/div/main/section/div[2]/div/a'.</msg>
+<arg>//*[@id="root"]/div/main/section/div[2]/div/a</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:09.928212" elapsed="0.046957"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:10.027055" level="INFO">Current page contains text '1369900738000'.</msg>
+<arg>${ID}</arg>
+<arg>loglevel=INFO</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-09T16:21:09.975367" elapsed="0.051766"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:21:09.858091" elapsed="0.169114"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:21:09.747394" elapsed="0.280214"/>
+</test>
+<test id="s1-t3" name="Health_Check_Req" line="45">
+<kw name="To Home">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:10.034506" level="INFO">Current page contains element '//*[@id="root"]/div/nav/header/ul/div/a/div'.</msg>
+<arg>//*[@id="root"]/div/nav/header/ul/div/a/div</arg>
+<arg>timeout=10</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.028987" elapsed="0.005622"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:10.035017" level="INFO">Clicking element '//*[@id="root"]/div/nav/header/ul/div/a/div'.</msg>
+<arg>//*[@id="root"]/div/nav/header/ul/div/a/div</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.034779" elapsed="0.121341"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>https://chiangmuan.igovapp.com/</arg>
+<arg>timeout=10</arg>
+<arg>message=None</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.156316" elapsed="0.004140"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:21:10.028578" elapsed="0.132175"/>
+</kw>
+<kw name="Health_Checking">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:10.161916" level="INFO">Clicking element '//*[@id="root"]/div/main/section[2]/div/a[1]/div'.</msg>
+<arg>//*[@id="root"]/div/main/section[2]/div/a[1]/div</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.161564" elapsed="0.050550"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>https://chiangmuan.igovapp.com/health</arg>
+<arg>timeout=None</arg>
+<arg>message=None</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.212314" elapsed="0.013819"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:10.226660" level="INFO">Clicking element '//*[@id="root"]/div/main/section[2]/div/div[2]/div[3]/a'.</msg>
+<arg>//*[@id="root"]/div/main/section[2]/div/div[2]/div[3]/a</arg>
+<arg>modifier=False</arg>
+<arg>action_chain=False</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.226377" elapsed="0.192088"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[@id="root"]/div/main/article/section[2]/div/div/div</arg>
+<arg>timeout=10</arg>
+<arg>error=None</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.418796" elapsed="0.219129"/>
+</kw>
+<kw name="Element Should Not Contain" owner="SeleniumLibrary">
+<msg time="2026-02-09T16:21:10.655456" level="INFO">Element '//*[@id="root"]/div/main/article/section[2]/div/div/div' does not contain text 'ไม่มีข้อมูลการตรวจสุขภาพ'.</msg>
+<arg>//*[@id="root"]/div/main/article/section[2]/div/div/div</arg>
+<arg>${NoHis}</arg>
+<arg>message=None</arg>
+<arg>ignore_case=False</arg>
+<doc>Verifies that element ``locator`` does not contain text ``expected``.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.638125" elapsed="0.017467"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:21:10.161191" elapsed="0.494564"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:21:10.028143" elapsed="0.627884"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-09T16:21:10.656876" elapsed="2.153023"/>
+</kw>
+<status status="PASS" start="2026-02-09T16:20:57.418843" elapsed="15.391297"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="testRF02" id="s1" pass="3" fail="0" skip="0">testRF02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
