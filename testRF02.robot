@@ -4,7 +4,7 @@ Suite Setup       Open Browser    https://chiangmuan.igovapp.com    chrome
 Suite Teardown    Close Browser
 
 *** Variables ***
-${ID}              1369900738000
+${ID}              1559900500915
 ${NoHis}        ไม่มีข้อมูลการตรวจสุขภาพ
 *** Keywords ***
 Regist
